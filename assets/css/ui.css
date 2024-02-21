@@ -266,12 +266,19 @@ img {
 .check-list-grp {
   width: 100%;
 }
-.check-list-grp .list {
+.check-list-grp .list,
+.check-list-grp .list-row {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 15px;
+}
+.check-list-grp .list:last-child {
+  margin-bottom: 0;
+}
+.check-list-grp .list-row {
+  margin-bottom: 0;
 }
 .check-list-grp .list .ico-list-check {
   margin-top: 5.5px;
@@ -282,6 +289,100 @@ img {
 }
 .check-list-grp .check-list-grp .list:last-child {
   margin-bottom: 0;
+}
+
+.inner-list-grp {
+  padding-left: 27px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.inner-list-grp:last-child {
+  margin-bottom: 0;
+}
+.inner-list-grp .list {
+  font-size: 14px;
+}
+
+.square-num-list-grp .square-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f15c6a;
+  height: 16px;
+  min-width: 16px;
+  padding: 0 3px;
+  color: white;
+  font-size: 14px;
+  margin-top: 2px;
+  margin-right: 7px;
+}
+.square-num-list-grp .list {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.square-num-list-grp .list:last-child {
+  margin-bottom: 0;
+}
+
+.mungyeong-box {
+  margin-bottom: 35px;
+}
+
+.picture-card {
+  width: 218px;
+  height: 184px;
+  position: relative;
+  border: 1px solid #dddddd;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.picture-card .thumbnail-img {
+  height: calc(100% - 42px);
+}
+.picture-card .overlay-txt {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
+  bottom: 57px;
+  left: 20px;
+}
+.picture-card .overlay-txt:before {
+  height: 3px;
+  content: "";
+  width: 22px;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: -3.5px;
+  left: 0;
+}
+.picture-card .card-caption {
+  background-color: #def5f5;
+  width: 100%;
+  text-align: center;
+  padding: 9px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.picture-card .card-caption .txt {
+  font-size: 15px;
+}
+.picture-card .card-caption .sm-txt {
+  font-size: 12px;
+}
+
+.picture-card.type-w100 {
+  width: 100%;
+}
+
+.picture-card.type-lg {
+  height: 331px;
 }
 
 .page-container {
@@ -531,6 +632,14 @@ img {
   font-weight: 400;
 }
 
+.subpage-content .section-title.type-02 {
+  font-size: 20px;
+}
+.subpage-content .section-title.type-02 .ico-subpage-title02 {
+  margin-top: 6px;
+  margin-right: 4px;
+}
+
 .btn {
   padding: 0;
   border: 0;
@@ -623,6 +732,12 @@ img {
   width: 22px;
   height: 22px;
   background-image: url(../images/icon/ico-subpage-title01.png);
+}
+
+.ico-subpage-title02 {
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/icon/ico-subpage-title02.png);
 }
 
 .ico-list-check {
