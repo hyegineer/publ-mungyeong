@@ -11,3 +11,20 @@
 .facil-education-apply-page .first-bd-box {
   margin-bottom: 50px;
 }
+
+/* 여기서부터 css 수정 */
+.subpage-content .section-title {
+    margin-bottom: 15px;
+}
+
+.subpage-content .section-title:last-child {
+    margin-bottom: 0;
+}
+
+.subpage-content .section-content.type-pdl {
+    padding-left: 35px;
+}
+
+.intro-watch-page .section {
+    margin-bottom: 50px;
+}
