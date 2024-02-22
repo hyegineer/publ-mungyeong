@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문경자연생태박물관</title>
-    <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
-    <link rel="stylesheet" href="assets/css/vendor/reset.css">
-    <link rel="stylesheet" href="assets/css/ui.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
-    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
-  </head>
-  <body>
-    <div id="app">
 
-      <!-- 관리자 : 로그인 페이지 -->
-      <div class="admin-login-page page-container">
-        <img src="" alt="">
-        <div>
-          <div>
-            <h1>MunGyeong</h1>
-            <p>Natural Ecology Museum</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문경자연생태박물관</title>
+
+  <!-- Open Graph -->
+  <meta name="title" content="문경자연생태박물관">
+  <meta name="author" content="문경자연생태박물관">
+  <meta name="description" content="문경자연생태박물관 홈페이지입니다.">
+  <meta name="keywords" content="문경자연생태박물관, 문경, 문경생태박물관">
+  <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
+  <link rel="stylesheet" href="assets/css/vendor/reset.css">
+  <link rel="stylesheet" href="assets/css/ui.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
+</head>
+
+<body ontouchstart>
+  <div id="app">
+
+    <!-- 관리자 : 로그인 페이지 -->
+    <div class="admin-login-page page-container">
+      <img src="assets/images/img/img-bg-admin-login.png" alt="배경" class="bg-img">
+      <div class="admin-login-box">
+        <div class="inner">
+          <div class="top-txt-wrap">
+            <h1 class="txt type-xlg">MunGyeong</h1>
+            <p class="txt type-md">Natural Ecology Museum</p>
           </div>
-          <div>
-            <div>
-              <i></i>
-              <input type="text" placeholder="아이디">
+          <div class="admin-login-inp-grp">
+            <div class="admin-login-inp">
+              <i class="ico ico-admin-login-id"></i>
+              <input type="text" placeholder="아이디" class="inp">
             </div>
-            <div>
-              <i></i>
-              <input type="password" autocomplete="new-password" placeholder="비밀번호">
+            <div class="admin-login-inp">
+              <i class="ico ico-admin-login-pwd"></i>
+              <input type="password" autocomplete="new-password" placeholder="비밀번호" class="inp">
             </div>
           </div>
-          <div>
-            <button type="button">로그인</button>
+          <div class="btn-wrap">
+            <button type="button" class="submit-btn" onclick="location.href='admin-archive-create.html';">로그인</button>
           </div>
         </div>
       </div>
-
-      <!-- END 관리자 : 로그인 페이지 -->
     </div>
-  </body>
+
+    <!-- END 관리자 : 로그인 페이지 -->
+  </div>
+  <script src="assets/js/ui.js"></script>
+</body>
+
 </html>

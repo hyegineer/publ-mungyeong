@@ -19,6 +19,10 @@ img {
   display: none !important;
 }
 
+.mb-show {
+  display: none;
+}
+
 /* 그냥 안보이게 */
 .none {
   display: none;
@@ -133,6 +137,7 @@ img {
   justify-content: flex-start;
   gap: 5px;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 .tabs .tab {
   padding: 0;
@@ -158,6 +163,9 @@ img {
 }
 .tabs .tab:active {
   transition: all 0s;
+}
+.tabs .tab.type-sm {
+  min-width: 180px;
 }
 .tabs .tab:hover {
   background-color: #ececec;
@@ -219,6 +227,11 @@ img {
   width: 100%;
   border: 2px solid #d1f2f0;
   padding: 18px;
+}
+
+.gray-bd-box {
+  width: 100%;
+  border: 4px solid #e5e5e5;
 }
 
 .ico-direct-btn {
@@ -387,6 +400,27 @@ img {
 
 .picture-card.type-lg {
   height: 331px;
+}
+
+.grid-list-grp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.basic-card {
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  overflow: hidden;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }
 
 .page-container {
@@ -608,7 +642,6 @@ img {
 .subpage-content {
   color: #353535;
   line-height: 1.5;
-  word-break: keep-all;
 }
 .subpage-content .section {
   margin-bottom: 50px;
@@ -625,7 +658,7 @@ img {
   word-break: keep-all;
 }
 .subpage-content .section-title {
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   font-size: 25px;
@@ -654,6 +687,12 @@ img {
 .subpage-content .section-title:last-child {
   margin-bottom: 0;
 }
+.subpage-content .section-content {
+  margin-bottom: 25px;
+}
+.subpage-content .section-content:last-child {
+  margin-bottom: 0;
+}
 .subpage-content .section-content.type-pdl {
   padding-left: 35px;
 }
@@ -661,6 +700,12 @@ img {
   display: flex;
   align-items: flex-start;
   gap: 30px;
+}
+.subpage-content .inner-content {
+  margin-bottom: 50px;
+}
+.subpage-content .inner-content:last-child {
+  margin-bottom: 0;
 }
 
 .btn {
@@ -696,6 +741,40 @@ img {
   padding: 0 10px;
   height: 34px;
   font-size: 14px;
+}
+
+.gray-bd-btn {
+  background-color: #f3f3f3;
+  border: 1px solid #bcbcbc;
+  font-size: 18px;
+  height: 44px;
+  min-width: 100px;
+  padding: 0 15px;
+  color: #353535;
+}
+
+.theme-solid-btn {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
+  position: relative;
+  transition: all 0.3s;
+  min-width: 100px;
+  padding: 0 15px;
+  color: white;
+  height: 44px;
+  border: 1px solid #109891;
+  background-color: #42c5be;
+  font-size: 18px;
+}
+.theme-solid-btn:active {
+  transition: all 0s;
 }
 
 .ico {
@@ -805,11 +884,60 @@ img {
   background-image: url(../images/icon/ico-ctrl-next02.png);
 }
 
+.ico-admin-login-id {
+  width: 30px;
+  height: 34px;
+  background-image: url(../images/icon/ico-admin-login-id.png);
+}
+
+.ico-admin-login-pwd {
+  width: 30px;
+  height: 34px;
+  background-image: url(../images/icon/ico-admin-login-pwd.png);
+}
+
+.ico-faq-arrow-up {
+  width: 24px;
+  height: 14px;
+  background-image: url(../images/icon/ico-faq-arrow-up.png);
+}
+
+.ico-faq-arrow-down {
+  width: 24px;
+  height: 14px;
+  background-image: url(../images/icon/ico-faq-arrow-down.png);
+}
+
+.ico-vr-guide {
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/icon/ico-vr-guide.png);
+}
+
+.ico-vr-people {
+  width: 19px;
+  height: 29px;
+  background-image: url(../images/icon/ico-vr-people.png);
+}
+
+.ico-fold-arrow-up {
+  width: 24px;
+  height: 14px;
+  background-image: url(../images/icon/ico-fold-arrow-up.png);
+}
+
+.ico-fold-arrow-down {
+  width: 24px;
+  height: 14px;
+  background-image: url(../images/icon/ico-fold-arrow-down.png);
+}
+
 .pagination {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
+  margin-top: 40px;
 }
 
 .pagination .ctrl-btn,

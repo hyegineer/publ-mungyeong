@@ -1,141 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문경자연생태박물관</title>
-    <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
-    <link rel="stylesheet" href="assets/css/vendor/reset.css">
-    <link rel="stylesheet" href="assets/css/ui.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
-    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
-  </head>
-  <body>
-    <div id="app">
-      <header class="header">
-        <div class="header-inner">
-          <h1 class="logo">
-            <a href="index.html">
-              <img src="assets/images/logo/logo-symbol.png" alt="문경자연새재박물관" class="logo-img">
-            </a>
-          </h1>
-          <div class="header-nav-grp">
-            <div class="header-nav">
-              <a href="index.html" class="link ">Home</a>
-            </div>
-            <div class="header-nav">
-              <a href="introduce-greeting.html" class="link ">박물관 소개</a>
-            </div>
-            <div class="header-nav">
-              <a href="facilities-ecology-guide.html" class="link ">시설/전시</a>
-            </div>
-            <div class="header-nav">
-              <a href="news-new-list.html" class="link ">소식 나눔</a>
-            </div>
-            <div class="header-nav">
-              <a href="archive-3d-list.html" class="link active">아카이브</a>
-            </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문경자연생태박물관</title>
+
+  <!-- Open Graph -->
+  <meta name="title" content="문경자연생태박물관">
+  <meta name="author" content="문경자연생태박물관">
+  <meta name="description" content="문경자연생태박물관 홈페이지입니다.">
+  <meta name="keywords" content="문경자연생태박물관, 문경, 문경생태박물관">
+  <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
+  <link rel="stylesheet" href="assets/css/vendor/reset.css">
+  <link rel="stylesheet" href="assets/css/ui.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
+</head>
+
+<body ontouchstart>
+  <div id="app">
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo/logo-symbol.png" alt="문경자연새재박물관" class="logo-img">
+          </a>
+        </h1>
+        <div class="header-nav-grp">
+          <div class="header-nav">
+            <a href="index.html" class="link ">Home</a>
           </div>
-          <div class="header-sns-grp">
-            <a href="#" target="_blank" class="header-sns-link">
-              <span class="txt-hidden">유튜브</span>
-              <img src="assets/images/icon/ico-sns-youtube.png" alt="유튜브 아이콘" class="ico">
-            </a>
-            <a href="#" target="_blank" class="header-sns-link">
-              <span class="txt-hidden">페이스북</span>
-              <img src="assets/images/icon/ico-sns-facebook.png" alt="페이스북 아이콘" class="ico">
-            </a>
-            <a href="#" target="_blank" class="header-sns-link">
-              <span class="txt-hidden">인스타그램</span>
-              <img src="assets/images/icon/ico-sns-instagram.png" alt="인스타그램 아이콘" class="ico">
-            </a>
+          <div class="header-nav">
+            <a href="introduce-greeting.html" class="link ">박물관 소개</a>
+          </div>
+          <div class="header-nav">
+            <a href="facilities-ecology-guide.html" class="link ">시설/전시</a>
+          </div>
+          <div class="header-nav">
+            <a href="news-new-list.html" class="link ">소식 나눔</a>
+          </div>
+          <div class="header-nav">
+            <a href="archive-3d-list.html" class="link active">아카이브</a>
           </div>
         </div>
-      </header>
-
-      <!-- 아카이브 : 3D 자료실 페이지 -->
-      <div class="arch-3d-page page-container">
-        <div class="subpage-top-header">
-          <img src="assets/images/img/img-subpage04-top-header.png" alt="서브페이지 헤더 이미지" class="bg">
-          <h2 class="title">
-            <img src="assets/images/text/text-subpage01-top-header.png" alt="초록의 생명이 호흡하는 문경자연생태박물관">
-          </h2>
-        </div>
-        <div class="subpage-layout">
-
-          <!-- 왼쪽 사이드바 -->
-          <div class="subpage-layout-left">
-            <div class="sidebar">
-              <h3 class="sidebar-title">아카이브</h3>
-              <ul class="sidebar-nav-grp">
-                <li class="sidebar-nav">
-                  <a href="archive-3d-list.html" class="link active">3D 자료실</a>
-                </li>
-                <li class="sidebar-nav">
-                  <a href="archive-nature-list.html" class="link ">자연환경</a>
-                </li>
-                <li class="sidebar-nav">
-                  <a href="archive-living-thing-list.html" class="link ">생물자원</a>
-                </li>
-                <li class="sidebar-nav">
-                  <a href="archive-ecology-list.html" class="link ">생태자원</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- END 왼쪽 사이드바 -->
-
-          <!-- 오른쪽 내용영역 -->
-          <div class="subpage-layout-right">
-            <div class="subpage-title-wrap">
-              <h4 class="subpage-title">3D 자료실</h4>
-            </div>
-            <div class="subpage-content">
-
-              <!-- 갤러리 리스트 영역 -->
-              <div>
-
-                <!-- 리스트 -->
-                <div>
-                  <div>
-                    <figure>
-                      <img src="" alt="">
-                    </figure>
-                    <div>
-                      <p>가마우지</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- END 리스트 -->
-              </div>
-
-              <!-- END 갤러리 리스트 영역 -->
-            </div>
-          </div>
-
-          <!-- END 오른쪽 내용영역 -->
+        <div class="header-sns-grp">
+          <a href="#" target="_blank" class="header-sns-link">
+            <span class="txt-hidden">유튜브</span>
+            <img src="assets/images/icon/ico-sns-youtube.png" alt="유튜브 아이콘" class="ico">
+          </a>
+          <a href="#" target="_blank" class="header-sns-link">
+            <span class="txt-hidden">페이스북</span>
+            <img src="assets/images/icon/ico-sns-facebook.png" alt="페이스북 아이콘" class="ico">
+          </a>
+          <a href="#" target="_blank" class="header-sns-link">
+            <span class="txt-hidden">인스타그램</span>
+            <img src="assets/images/icon/ico-sns-instagram.png" alt="인스타그램 아이콘" class="ico">
+          </a>
         </div>
       </div>
+    </header>
 
-      <!-- END 아카이브 : 3D 자료실 페이지 -->
-      <footer class="footer">
-        <div class="footer-inner">
-          <h6 class="logo">
-            <a href="index.html">
-              <img src="assets/images/logo/logo-footer.png" alt="로고" class="logo-img">
-            </a>
-          </h6>
-          <div class="footer-info-grp">
-            <p class="txt">경북 문경시 문경읍 새재1길 45(하초리 243) / 대표전화 : 054-550-8383, 팩스 : 054-550-6179 <br>
-              COPYRIGHT © 2024 MUNGYEONG Natural Ecology Museum. ALL RIGHTS RESERVED. 홈페이지담당자이메일 GBMGMASTER@KOREA.KR <br>
-              본 홈페이지에 게시된 이메일주소가 자동 수집을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+    <!-- 아카이브 : 3D 자료실 페이지 -->
+    <div class="arch-3d-page page-container">
+      <div class="subpage-top-header">
+        <img src="assets/images/img/img-subpage04-top-header.png" alt="서브페이지 헤더 이미지" class="bg">
+        <h2 class="title">
+          <img src="assets/images/text/text-subpage01-top-header.png" alt="초록의 생명이 호흡하는 문경자연생태박물관">
+        </h2>
+      </div>
+      <div class="subpage-layout">
+
+        <!-- 왼쪽 사이드바 -->
+        <div class="subpage-layout-left">
+          <div class="sidebar">
+            <h3 class="sidebar-title">아카이브</h3>
+            <ul class="sidebar-nav-grp">
+              <li class="sidebar-nav">
+                <a href="archive-3d-list.html" class="link active">3D 자료실</a>
+              </li>
+              <li class="sidebar-nav">
+                <a href="archive-nature-list.html" class="link ">자연환경</a>
+              </li>
+              <li class="sidebar-nav">
+                <a href="archive-living-thing-list.html" class="link ">생물자원</a>
+              </li>
+              <li class="sidebar-nav">
+                <a href="archive-ecology-list.html" class="link ">생태자원</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
+
+        <!-- END 왼쪽 사이드바 -->
+
+        <!-- 오른쪽 내용영역 -->
+        <div class="subpage-layout-right">
+          <div class="subpage-title-wrap">
+            <h4 class="subpage-title">3D 자료실</h4>
+          </div>
+          <div class="subpage-content">
+
+            <!-- 갤러리 리스트 영역 -->
+            <div class="gall-list-grp type-col4 type-rgap40">
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card" onclick="location.href='archive-3d-detail.html';">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card" onclick="location.href='archive-3d-detail.html';">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card" onclick="location.href='archive-3d-detail.html';">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card" onclick="location.href='archive-3d-detail.html';">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 1줄 끝 (총 4개) -->
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card" onclick="location.href='archive-3d-detail.html';">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card" onclick="location.href='archive-3d-detail.html';">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card" onclick="location.href='archive-3d-detail.html';">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card" onclick="location.href='archive-3d-detail.html';">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 1줄 끝 (총 4개) -->
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card" onclick="location.href='archive-3d-detail.html';">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card" onclick="location.href='archive-3d-detail.html';">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 리스트 -->
+              <div class="list">
+                <div class="gall-card" onclick="location.href='archive-3d-detail.html';">
+                  <figure class="thumbnail">
+                    <img src="assets/images/sample/img-sample-arch-3d01.png" alt="갤러리 이미지 썸네일" class="thumbnail-img">
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-ttl">가마우지</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 리스트 -->
+
+              <!-- 1줄 끝 (총 4개) -->
+            </div>
+
+            <!-- END 갤러리 리스트 영역 -->
+
+            <!-- 페이지네이션 -->
+            <div class="pagination">
+              <button type="button" class="ctrl-btn">
+                <span class="txt-hidden">맨 처음</span>
+                <i class="ico ico-pagination-pprev"></i>
+              </button>
+              <button type="button" class="ctrl-btn">
+                <span class="txt-hidden">이전</span>
+                <i class="ico ico-pagination-prev"></i>
+              </button>
+              <div class="page-btn-grp">
+                <button type="button" class="page-btn active">1</button>
+                <button type="button" class="page-btn">2</button>
+                <button type="button" class="page-btn">3</button>
+                <button type="button" class="page-btn">4</button>
+                <button type="button" class="page-btn">5</button>
+                <button type="button" class="page-btn">6</button>
+              </div>
+              <button type="button" class="ctrl-btn">
+                <span class="txt-hidden">다음</span>
+                <i class="ico ico-pagination-next"></i>
+              </button>
+              <button type="button" class="ctrl-btn">
+                <span class="txt-hidden">맨 끝</span>
+                <i class="ico ico-pagination-nnext"></i>
+              </button>
+            </div>
+
+            <!-- END 페이지네이션 -->
+          </div>
+        </div>
+
+        <!-- END 오른쪽 내용영역 -->
+      </div>
     </div>
-  </body>
+
+    <!-- END 아카이브 : 3D 자료실 페이지 -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <h6 class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo/logo-footer.png" alt="로고" class="logo-img">
+          </a>
+        </h6>
+        <div class="footer-info-grp">
+          <p class="txt">경북 문경시 문경읍 새재1길 45(하초리 243) / 대표전화 : 054-550-8383, 팩스 : 054-550-6179 <br>
+            COPYRIGHT © 2024 MUNGYEONG Natural Ecology Museum. ALL RIGHTS RESERVED. 홈페이지담당자이메일 GBMGMASTER@KOREA.KR <br>
+            본 홈페이지에 게시된 이메일주소가 자동 수집을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/ui.js"></script>
+</body>
+
 </html>
