@@ -47,6 +47,10 @@
   margin-bottom: 50px;
 }
 
+.subpage-content .section:last-child {
+  margin-bottom: 0;
+}
+
 .subpage-content .section.type-bd-bottom {
     border-bottom: 1px dashed #959595;
     padding-bottom: 45px;
