@@ -338,6 +338,7 @@ img {
   border: 1px solid #dddddd;
   overflow: hidden;
   border-radius: 5px;
+  flex-shrink: 0;
 }
 .picture-card .thumbnail-img {
   height: calc(100% - 42px);
@@ -606,12 +607,20 @@ img {
   line-height: 1.5;
   word-break: keep-all;
 }
-
+.subpage-content .section {
+  margin-bottom: 50px;
+}
+.subpage-content .section.type-bd-bottom {
+  border-bottom: 1px dashed #959595;
+  padding-bottom: 45px;
+}
+.subpage-content .section:last-child {
+  margin-bottom: 0;
+}
 .subpage-content .desc-txt {
   font-size: 15px;
   word-break: keep-all;
 }
-
 .subpage-content .section-title {
   display: inline-flex;
   align-items: flex-start;
@@ -620,6 +629,7 @@ img {
   font-weight: 600;
   color: #353535;
   gap: 6px;
+  margin-bottom: 15px;
 }
 .subpage-content .section-title .ico-subpage-title01 {
   margin-top: 5.5px;
@@ -631,13 +641,23 @@ img {
 .subpage-content .section-title .light-txt {
   font-weight: 400;
 }
-
 .subpage-content .section-title.type-02 {
   font-size: 20px;
 }
 .subpage-content .section-title.type-02 .ico-subpage-title02 {
   margin-top: 6px;
   margin-right: 4px;
+}
+.subpage-content .section-title:last-child {
+  margin-bottom: 0;
+}
+.subpage-content .section-content.type-pdl {
+  padding-left: 35px;
+}
+.subpage-content .section-content.type-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
 }
 
 .btn {

@@ -1,87 +1,22 @@
+@charset "UTF-8";
 .facil-commentator-apply-page .tabs {
   margin-bottom: 25px;
 }
 .facil-commentator-apply-page .first-bd-box {
   margin-bottom: 50px;
 }
-
-.facil-education-apply-page .tabs {
-  margin-bottom: 25px;
-}
-.facil-education-apply-page .first-bd-box {
-  margin-bottom: 50px;
-}
-
-/* 여기서부터 css 수정 */
-.subpage-content .section-title {
-    margin-bottom: 15px;
-}
-
-.subpage-content .section-title:last-child {
-    margin-bottom: 0;
-}
-
-.subpage-content .section-content.type-pdl {
-    padding-left: 35px;
-}
-
-.intro-watch-page .section {
-    margin-bottom: 50px;
-}
-.facil-commentator-apply-page .tabs {
-  margin-bottom: 25px;
-}
-.facil-commentator-apply-page .first-bd-box {
-  margin-bottom: 50px;
-}
-
-.facil-education-apply-page .tabs {
-  margin-bottom: 25px;
-}
-.facil-education-apply-page .first-bd-box {
-  margin-bottom: 50px;
-}
-
-/* 여기서부터 css 수정 */
-.subpage-content .section {
-  margin-bottom: 50px;
-}
-
-.subpage-content .section:last-child {
-  margin-bottom: 0;
-}
-
-.subpage-content .section.type-bd-bottom {
-    border-bottom: 1px dashed #959595;
-    padding-bottom: 45px;
-}
-
-.subpage-content .section-title {
-    margin-bottom: 15px;
-}
-
-.subpage-content .section-title:last-child {
-    margin-bottom: 0;
-}
-
-.subpage-content .section-content.type-pdl {
-    padding-left: 35px;
-}
-
-.subpage-content .section-content.type-flex {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-.picture-card {
-    flex-shrink: 0;
-}
-
-.facil-education-apply-page .ico-direct-btn {
-    margin-top: 20px;
-}
-
 .facil-commentator-apply-page .ico-direct-btn {
   margin-top: 20px;
 }
+
+.facil-education-apply-page .tabs {
+  margin-bottom: 25px;
+}
+.facil-education-apply-page .first-bd-box {
+  margin-bottom: 50px;
+}
+.facil-education-apply-page .ico-direct-btn {
+  margin-top: 20px;
+}
+
+/* 여기서부터 css 수정 */
