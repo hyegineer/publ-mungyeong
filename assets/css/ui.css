@@ -26,6 +26,9 @@ img {
 
 .mg-left {
   margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .thumbnail-img {
@@ -764,6 +767,42 @@ img {
   width: 18px;
   height: 14px;
   background-image: url(../images/icon/ico-list-check.png);
+}
+
+.ico-ctrl-prev {
+  width: 9px;
+  height: 16px;
+  background-image: url(../images/icon/ico-ctrl-prev.png);
+}
+
+.ico-ctrl-prev02 {
+  width: 24px;
+  height: 52px;
+  background-image: url(../images/icon/ico-ctrl-prev02.png);
+}
+
+.ico-ctrl-play {
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/icon/ico-ctrl-play.png);
+}
+
+.ico-ctrl-palse {
+  width: 10px;
+  height: 17px;
+  background-image: url(../images/icon/ico-ctrl-palse.png);
+}
+
+.ico-ctrl-next {
+  width: 9px;
+  height: 16px;
+  background-image: url(../images/icon/ico-ctrl-next.png);
+}
+
+.ico-ctrl-next02 {
+  width: 24px;
+  height: 52px;
+  background-image: url(../images/icon/ico-ctrl-next02.png);
 }
 
 .pagination {
