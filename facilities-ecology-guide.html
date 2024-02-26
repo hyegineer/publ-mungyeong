@@ -1,606 +1,640 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문경자연생태박물관</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>문경자연생태박물관</title>
-
-  <!-- Open Graph -->
-  <meta name="title" content="문경자연생태박물관">
-  <meta name="author" content="문경자연생태박물관">
-  <meta name="description" content="문경자연생태박물관 홈페이지입니다.">
-  <meta name="keywords" content="문경자연생태박물관, 문경, 문경생태박물관">
-  <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
-  <link rel="stylesheet" href="assets/css/vendor/reset.css">
-  <link rel="stylesheet" href="assets/css/ui.css">
-  <link rel="stylesheet" href="assets/css/pages.css">
-  <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
-</head>
-
-<body ontouchstart>
-  <div id="app">
-    <header class="header">
-      <div class="header-inner">
-        <h1 class="logo">
-          <a href="index.html">
-            <img src="assets/images/logo/logo-symbol.png" alt="문경자연새재박물관" class="logo-img">
-          </a>
-        </h1>
-        <div class="header-nav-grp">
-          <div class="header-nav">
-            <a href="index.html" class="link ">Home</a>
-          </div>
-          <div class="header-nav">
-            <a href="introduce-greeting.html" class="link ">박물관 소개</a>
-          </div>
-          <div class="header-nav">
-            <a href="facilities-ecology-guide.html" class="link active">시설/전시</a>
-          </div>
-          <div class="header-nav">
-            <a href="news-new-list.html" class="link ">소식 나눔</a>
-          </div>
-          <div class="header-nav">
-            <a href="archive-3d-list.html" class="link ">아카이브</a>
-          </div>
-        </div>
-        <div class="header-sns-grp">
-          <a href="#" target="_blank" class="header-sns-link">
-            <span class="txt-hidden">유튜브</span>
-            <img src="assets/images/icon/ico-sns-youtube.png" alt="유튜브 아이콘" class="ico">
-          </a>
-          <a href="#" target="_blank" class="header-sns-link">
-            <span class="txt-hidden">페이스북</span>
-            <img src="assets/images/icon/ico-sns-facebook.png" alt="페이스북 아이콘" class="ico">
-          </a>
-          <a href="#" target="_blank" class="header-sns-link">
-            <span class="txt-hidden">인스타그램</span>
-            <img src="assets/images/icon/ico-sns-instagram.png" alt="인스타그램 아이콘" class="ico">
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <!-- 시설/전시 : 생태관람 안내 페이지 -->
-    <div class="facil-ecology-guide-page page-container">
-      <div class="subpage-top-header">
-        <img src="assets/images/img/img-subpage02-top-header.png" alt="서브페이지 헤더 이미지" class="bg">
-        <h2 class="title">
-          <img src="assets/images/text/text-subpage01-top-header.png" alt="초록의 생명이 호흡하는 문경자연생태박물관">
-        </h2>
-      </div>
-      <div class="subpage-layout">
-
-        <!-- 왼쪽 사이드바 -->
-        <div class="subpage-layout-left">
-          <div class="sidebar">
-            <h3 class="sidebar-title">시설/전시</h3>
-            <ul class="sidebar-nav-grp">
-              <li class="sidebar-nav">
-                <a href="facilities-ecology-guide.html" class="link active">생태관람 안내</a>
-              </li>
-              <li class="sidebar-nav">
-                <a href="facilities-commentator-apply.html" class="link ">자연환경해설사 신청</a>
-              </li>
-              <li class="sidebar-nav">
-                <a href="facilities-education-apply.html" class="link ">자연생태교육 신청</a>
-              </li>
-              <li class="sidebar-nav">
-                <a href="#" class="link" onclick="alert('준비 중입니다.');">벅스 어드벤처</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- END 왼쪽 사이드바 -->
-
-        <!-- 오른쪽 내용영역 -->
-        <div class="subpage-layout-right">
-          <div class="subpage-title-wrap">
-            <h4 class="subpage-title">생태관람 안내</h4>
-          </div>
-          <div class="subpage-content">
-            <div id="facil-ecology-guide-tabs" class="tabs">
-              <button type="button" data-tab="tab-1f" class="tab type-flex active">1층</button>
-              <button type="button" data-tab="tab-2f" class="tab type-flex">2층</button>
-              <button type="button" data-tab="tab-outdoor" class="tab type-flex">야외전시물</button>
+    <!-- Open Graph -->
+    <meta name="title" content="문경자연생태박물관">
+    <meta name="author" content="문경자연생태박물관">
+    <meta name="description" content="문경자연생태박물관 홈페이지입니다.">
+    <meta name="keywords" content="문경자연생태박물관, 문경, 문경생태박물관">
+    <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/vendor/reset.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
+  </head>
+  <body ontouchstart>
+    <div id="app">
+      <header class="header">
+        <div class="header-inner">
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="assets/images/logo/logo-symbol.png" alt="문경자연새재박물관" class="logo-img">
+            </a>
+          </h1>
+          <div class="header-nav-grp">
+            <div class="header-nav">
+              <a href="index.html" class="link ">Home</a>
             </div>
-            <div id="facil-ecology-guide-tabs-container" class="tab-content-container">
+            <div class="header-nav">
+              <a href="introduce-greeting.html" class="link ">박물관 소개</a>
+            </div>
+            <div class="header-nav">
+              <a href="facilities-ecology-guide.html" class="link active">시설/전시</a>
+            </div>
+            <div class="header-nav">
+              <a href="news-new-list.html" class="link ">소식 나눔</a>
+            </div>
+            <div class="header-nav">
+              <a href="archive-3d-list.html" class="link ">아카이브</a>
+            </div>
+          </div>
+          <div class="header-sns-grp">
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">유튜브</span>
+              <img src="assets/images/icon/ico-sns-youtube.png" alt="유튜브 아이콘" class="ico">
+            </a>
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">페이스북</span>
+              <img src="assets/images/icon/ico-sns-facebook.png" alt="페이스북 아이콘" class="ico">
+            </a>
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">인스타그램</span>
+              <img src="assets/images/icon/ico-sns-instagram.png" alt="인스타그램 아이콘" class="ico">
+            </a>
+          </div>
+          <button id="header-nav-btn" type="button" class="btn header-nav-btn">
+            <span class="txt-hidden"></span>
+            <img src="assets/images/icon/ico-header-nav.svg" alt="헤더 오픈 아이콘" class="ico">
+          </button>
+        </div>
+      </header>
+      <div class="header-nav-page">
+        <button type="button" id="header-nav-close-btn" class="btn header-nav-close-btn">
+          <span class="txt-hidden"></span>
+          <img src="assets/images/icon/ico-header-close.svg" alt="헤더 닫기 아이콘" class="ico">
+        </button>
+        <div class="header-nav-page-inner">
+          <div class="header-nav-grp">
+            <div class="header-nav">
+              <a href="index.html" class="link ">Home</a>
+            </div>
+            <div class="header-nav">
+              <a href="introduce-greeting.html" class="link ">박물관 소개</a>
+            </div>
+            <div class="header-nav">
+              <a href="facilities-ecology-guide.html" class="link active">시설/전시</a>
+            </div>
+            <div class="header-nav">
+              <a href="news-new-list.html" class="link ">소식 나눔</a>
+            </div>
+            <div class="header-nav">
+              <a href="archive-3d-list.html" class="link ">아카이브</a>
+            </div>
+          </div>
+          <div class="header-sns-grp">
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">유튜브</span>
+              <img src="assets/images/icon/ico-sns-youtube.png" alt="유튜브 아이콘" class="ico">
+            </a>
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">페이스북</span>
+              <img src="assets/images/icon/ico-sns-facebook.png" alt="페이스북 아이콘" class="ico">
+            </a>
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">인스타그램</span>
+              <img src="assets/images/icon/ico-sns-instagram.png" alt="인스타그램 아이콘" class="ico">
+            </a>
+          </div>
+        </div>
+      </div>
 
-              <!-- 1층 내용 -->
-              <div id="tab-1f" class="tab-content active">
-                <div class="facil-floor-content">
-                  <section class="section map-section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">자연생태박물관 1층 지도</span>
-                    </h5>
-                    <div class="section-content">
-                      <img src="assets/images/img/img-facil-1f-map.png" alt="1층 지도 이미지" class="map-img">
-                      <div class="gray-bd-box facil-num-box">
-                        <div class="facil-num-item">
-                          <span class="num">1</span>
-                          <p class="txt">신재생에너지전시관</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">2</span>
-                          <p class="txt">영상관</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">3</span>
-                          <p class="txt">안내홀</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">4</span>
-                          <p class="txt">특별전시실</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">5</span>
-                          <p class="txt">신재생에너지전시관</p>
+      <!-- 시설/전시 : 생태관람 안내 페이지 -->
+      <div class="facil-ecology-guide-page page-container">
+        <div class="subpage-top-header">
+          <img src="assets/images/img/img-subpage02-top-header.png" alt="서브페이지 헤더 이미지" class="bg">
+          <h2 class="title">
+            <img src="assets/images/text/text-subpage01-top-header.png" alt="초록의 생명이 호흡하는 문경자연생태박물관">
+          </h2>
+        </div>
+        <div class="subpage-layout">
+
+          <!-- 왼쪽 사이드바 -->
+          <div class="subpage-layout-left">
+            <div class="sidebar">
+              <h3 class="sidebar-title">시설/전시</h3>
+              <ul class="sidebar-nav-grp">
+                <li class="sidebar-nav">
+                  <a href="facilities-ecology-guide.html" class="link active">생태관람 안내</a>
+                </li>
+                <li class="sidebar-nav">
+                  <a href="facilities-commentator-apply.html" class="link ">자연환경해설사 신청</a>
+                </li>
+                <li class="sidebar-nav">
+                  <a href="facilities-education-apply.html" class="link ">자연생태교육 신청</a>
+                </li>
+                <li class="sidebar-nav">
+                  <a href="#" class="link" onclick="alert('준비 중입니다.');">벅스 어드벤처</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- END 왼쪽 사이드바 -->
+
+          <!-- 오른쪽 내용영역 -->
+          <div class="subpage-layout-right">
+            <div class="subpage-title-wrap">
+              <h4 class="subpage-title">생태관람 안내</h4>
+            </div>
+            <div class="subpage-content">
+              <div id="facil-ecology-guide-tabs" class="tabs">
+                <button type="button" data-tab="tab-1f" class="tab type-flex active">1층</button>
+                <button type="button" data-tab="tab-2f" class="tab type-flex">2층</button>
+                <button type="button" data-tab="tab-outdoor" class="tab type-flex">야외전시물</button>
+              </div>
+              <div id="facil-ecology-guide-tabs-container" class="tab-content-container">
+
+                <!-- 1층 내용 -->
+                <div id="tab-1f" class="tab-content active">
+                  <div class="facil-floor-content">
+                    <section class="section map-section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">자연생태박물관 1층 지도</span>
+                      </h5>
+                      <div class="section-content">
+                        <img src="assets/images/img/img-facil-1f-map.png" alt="1층 지도 이미지" class="map-img">
+                        <div class="gray-bd-box facil-num-box">
+                          <div class="facil-num-item">
+                            <span class="num">1</span>
+                            <p class="txt">신재생에너지전시관</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">2</span>
+                            <p class="txt">영상관</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">3</span>
+                            <p class="txt">안내홀</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">4</span>
+                            <p class="txt">특별전시실</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">5</span>
+                            <p class="txt">신재생에너지전시관</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">신재생에너지전시관</span>
-                    </h5>
-                    <div class="section-content type-pdl type-flex">
-                      <figure class="picture-card">
-                        <img src="assets/images/img/img-facilities-ecology-f1-01.png" alt="썸네일" class="thumbnail-img">
-                        <figcaption class="card-caption">
-                          <span class="txt">신재생에너지전시관</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">기존의 화석연료나 원자력보다 환경친화적이면서 고갈된 에너지를 대체할 수있는 새로운 에너지 개발에 대한 내용을
-                        살펴볼 수 있습니다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">영상관</span>
-                    </h5>
-                    <div class="section-content type-pdl type-flex">
-                      <figure class="picture-card">
-                        <img src="assets/images/img/img-facilities-ecology-f1-02.png" alt="썸네일" class="thumbnail-img">
-                        <figcaption class="card-caption">
-                          <span class="txt">문경의 자연생태환경</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">출사동이가 다양한 생태자원을 간직한 문화의 하천, 산 등에 서식하고 있는 생물과 지질을 소개해 줍니다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">안내홀</span>
-                    </h5>
-                    <div class="section-content">
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">신재생에너지전시관</span>
+                      </h5>
                       <div class="section-content type-pdl type-flex">
                         <figure class="picture-card">
-                          <img src="assets/images/img/img-facilities-ecology-f1-03.png" alt="썸네일" class="thumbnail-img">
+                          <img src="assets/images/img/img-facilities-ecology-f1-01.png" alt="썸네일" class="thumbnail-img">
                           <figcaption class="card-caption">
-                            <span class="txt">안내데스크</span>
-                            <span class="txt sm-txt">(Office and guidace)</span>
+                            <span class="txt">신재생에너지전시관</span>
                           </figcaption>
                         </figure>
-                        <p class="desc-txt">문경새재 자연생태공원에 대한 전반적인 안내와 정보관, 영상관 등의 일정과 시간대별 프로그램에 대한 각종 정보와
-                          안내 팜플렛을 제공합니다.</p>
+                        <p class="desc-txt">기존의 화석연료나 원자력보다 환경친화적이면서 고갈된 에너지를 대체할 수있는 새로운 에너지 개발에 대한 내용을
+                          살펴볼 수 있습니다.</p>
                       </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">영상관</span>
+                      </h5>
                       <div class="section-content type-pdl type-flex">
                         <figure class="picture-card">
-                          <img src="assets/images/img/img-facilities-ecology-f1-04.png" alt="썸네일" class="thumbnail-img">
+                          <img src="assets/images/img/img-facilities-ecology-f1-02.png" alt="썸네일" class="thumbnail-img">
                           <figcaption class="card-caption">
-                            <span class="txt">문경 조령성</span> <br>
-                            <span class="txt sm-txt">(mungyeong choryeongsung)</span>
+                            <span class="txt">문경의 자연생태환경</span>
                           </figcaption>
                         </figure>
-                        <p class="desc-txt">영남대로의 관문이었으며 군사적으로 중요한 지점인 문경새재의 옛지도인 조령성편의 현재의 모습을 비교 학습 할 수
+                        <p class="desc-txt">출사동이가 다양한 생태자원을 간직한 문화의 하천, 산 등에 서식하고 있는 생물과 지질을 소개해 줍니다.</p>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">안내홀</span>
+                      </h5>
+                      <div class="section-content">
+                        <div class="section-content type-pdl type-flex">
+                          <figure class="picture-card">
+                            <img src="assets/images/img/img-facilities-ecology-f1-03.png" alt="썸네일" class="thumbnail-img">
+                            <figcaption class="card-caption">
+                              <span class="txt">안내데스크</span>
+                              <span class="txt sm-txt">(Office and guidace)</span>
+                            </figcaption>
+                          </figure>
+                          <p class="desc-txt">문경새재 자연생태공원에 대한 전반적인 안내와 정보관, 영상관 등의 일정과 시간대별 프로그램에 대한 각종 정보와
+                            안내 팜플렛을 제공합니다.</p>
+                        </div>
+                        <div class="section-content type-pdl type-flex">
+                          <figure class="picture-card">
+                            <img src="assets/images/img/img-facilities-ecology-f1-04.png" alt="썸네일" class="thumbnail-img">
+                            <figcaption class="card-caption">
+                              <span class="txt">문경 조령성</span> <br>
+                              <span class="txt sm-txt">(mungyeong choryeongsung)</span>
+                            </figcaption>
+                          </figure>
+                          <p class="desc-txt">영남대로의 관문이었으며 군사적으로 중요한 지점인 문경새재의 옛지도인 조령성편의 현재의 모습을 비교 학습 할 수
+                            있습니다.</p>
+                        </div>
+                        <div class="section-content type-pdl type-flex">
+                          <figure class="picture-card">
+                            <img src="assets/images/img/img-facilities-ecology-f1-05.png" alt="썸네일" class="thumbnail-img">
+                            <figcaption class="card-caption">
+                              <span class="txt">자연생태공원 축소모형</span> <br>
+                              <span class="txt sm-txt">(ecological park minirture)</span>
+                            </figcaption>
+                          </figure>
+                          <p class="desc-txt">문경새재 자연생태공원에 대한 전반적인 안내와 정보관, 영상관 등의 일정과 시간대별 프로그램에 대한 각종 정보와
+                            안내 팜플렛을 제공합니다.</p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">특별전시실</span>
+                      </h5>
+                      <div class="section-content type-pdl type-flex">
+                        <figure class="picture-card">
+                          <img src="assets/images/img/img-facilities-ecology-f1-06.png" alt="썸네일" class="thumbnail-img">
+                          <figcaption class="card-caption">
+                            <span class="txt">특별전시실</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">문경의 생태관련 개인 소장품을 대여하여 특별전시공간으로 활용하여 문경의 생태관련 전시문화를 활성하기 위하여 마련한 공간입니다.</p>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">가상4D체험</span>
+                      </h5>
+                      <div class="section-content type-pdl type-flex">
+                        <figure class="picture-card">
+                          <img src="assets/images/img/img-facilities-ecology-f1-07.png" alt="썸네일" class="thumbnail-img">
+                          <figcaption class="card-caption">
+                            <span class="txt">가상4D체험</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">자연생태박물관 4D라이더 장비를 활용하여 가상의 생태여행 및 생태체험을 할 수 있습니다. 고화질의 생태영상과
+                          사운 드를 제공하는 가상4D생태체험의 공간으로 체험할 수 있습니다. <br><br>
+                          이용료: 1회 이용시 1,000원 <br><br>
+                          1회 생태체험 인원은 6명입니다.</p>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+
+                <!-- END 1층 내용 -->
+
+                <!-- 2층 내용 -->
+                <div id="tab-2f" class="tab-content">
+                  <div class="facil-floor-content">
+                    <section class="section map-section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">자연생태박물관 2층 지도</span>
+                      </h5>
+                      <div class="section-content">
+                        <img src="assets/images/img/img-facil-2f-map.png" alt="2층 지도 이미지" class="map-img">
+                        <div class="gray-bd-box facil-num-box">
+                          <div class="facil-num-item">
+                            <span class="num">1</span>
+                            <p class="txt">생명의탄생(1zone)</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">2</span>
+                            <p class="txt">문경의자연환경(2zone)</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">3</span>
+                            <p class="txt">나무이야기(3zone)</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">4</span>
+                            <p class="txt">새이야기(3zone)</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">5</span>
+                            <p class="txt">물고기이야기(3zone)</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">6</span>
+                            <p class="txt">곤충이야기(3zone)</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">7</span>
+                            <p class="txt">버섯이야기(3zone)</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">8</span>
+                            <p class="txt">자연과인간(4zone)</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">9</span>
+                            <p class="txt">생태게임룸</p>
+                          </div>
+                          <div class="facil-num-item">
+                            <span class="num">10</span>
+                            <p class="txt">다목적 생태체험교육실</p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">1zone-생명의 탄생</span>
+                      </h5>
+                      <div class="section-content type-pdl">
+                        <figure class="picture-card type-w100 type-lg">
+                          <img src="assets/images/img/img-facilities-ecology-f2-01.png" alt="썸네일" class="thumbnail-img">
+                          <p class="overlay-txt">생명의 탄생 전시관 내부</p>
+                          <figcaption class="card-caption">
+                            <span class="txt">생명의 탄생 전시관 내부</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">2층 상설전시관 입구의 문경의 밤하늘은 인류의 과학발전 및 꿈을 상징하고 있다. 생명의 탄생코너에서는 태초에 지구의 생성이후 생명체가 어떻게
+                          만들어졌는가와 생물이 어떻게
+                          진화되어 인류가 만들어졌는가를 디오라마형식으로 연출하여 보여준다. 그리고 이런 자연사의 연구자료가 되는 화석 및 광물, 암석을 이해하고 배울 수 있다.</p>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">zone-문경의 자연환경</span>
+                      </h5>
+                      <div class="section-content type-pdl">
+                        <figure class="picture-card type-w100 type-lg">
+                          <img src="assets/images/img/img-facilities-ecology-f2-02.png" alt="썸네일" class="thumbnail-img">
+                          <p class="overlay-txt">문경의 자연환경 전시관 내부</p>
+                          <figcaption class="card-caption">
+                            <span class="txt">문경의 자연환경 전시관 내부</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">문경새재를 중심으로 문경에는많은 생물자원들이 분포하고 있으며, 특히 문경새재는 아직도 자연환경이 잘 보전되어 있는 곳 중에 하나이다. 이런
+                          문경의 숲을 가상으로걸으로
+                          문경의 자연환경 및 생물자원의 분포를 볼 수 있다.</p>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">3zone-나무이야기</span>
+                      </h5>
+                      <div class="section-content type-pdl">
+                        <figure class="picture-card type-w100 type-lg">
+                          <img src="assets/images/img/img-facilities-ecology-f2-03.png" alt="썸네일" class="thumbnail-img">
+                          <p class="overlay-txt">나무이야기 전시관 내부</p>
+                          <figcaption class="card-caption">
+                            <span class="txt">나무이야기 전시관 내부</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">문경일원에서 관찰되는 식물을 식용, 약용, 독성식물로 기능별로 분류하여 전시하고 있으며, 멸종위기식물, 특산식물, 문경새재의 기대종인 물박달나무
+                          및 선조들의 물박달나무를
+                          이용한 생활기구를 볼 수 있다.</p>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">3zone-새이야기</span>
+                      </h5>
+                      <div class="section-content type-pdl">
+                        <figure class="picture-card type-w100 type-lg">
+                          <img src="assets/images/img/img-facilities-ecology-f2-04.png" alt="썸네일" class="thumbnail-img">
+                          <p class="overlay-txt">새이야기 전시관 내부</p>
+                          <figcaption class="card-caption">
+                            <span class="txt">새이야기 전시관 내부</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">문경일원에서 관찰되는 새들을 들녘과 산지로 구분하여 디오라마로 연출하여 전시하고 있으며, 천연기념물 및 키오스크를 통한 새들의 특성을 학습할 수
+                          있다.</p>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">3zone-물고기이야기</span>
+                      </h5>
+                      <div class="section-content type-pdl">
+                        <figure class="picture-card type-w100 type-lg">
+                          <img src="assets/images/img/img-facilities-ecology-f2-05.png" alt="썸네일" class="thumbnail-img">
+                          <p class="overlay-txt">물고기이야기 전시관 내부</p>
+                          <figcaption class="card-caption">
+                            <span class="txt">물고기이야기 전시관 내부</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">문경새재의 계곡에서 채집한 살아있는 물고기가 대형수조에서 헤엄치고 주변으로는 야생동물 및 식물을 디오라마형태로 연출하여 놓았다.</p>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">3zone-곤충이야기</span>
+                      </h5>
+                      <div class="section-content type-pdl">
+                        <figure class="picture-card type-w100 type-lg">
+                          <img src="assets/images/img/img-facilities-ecology-f2-06.png" alt="썸네일" class="thumbnail-img">
+                          <p class="overlay-txt">곤충이야기 전시관 내부</p>
+                          <figcaption class="card-caption">
+                            <span class="txt">곤충이야기 전시관 내부</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">중앙의 대형기둥에는 나비의 아름다운 자태를 디자인하여 대형연출물로 표현해 놓았고, 새재일원에서 다양하게 관찰되는 매미목, 잠자리목, 메뚜기목,
+                          노린재목, 딱정벌레목으로
+                          분류하여 표본을 전시하여 각 목별 특징을 표본을 통하여 확인할 수 있다.</p>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">3zone-버섯이야기</span>
+                      </h5>
+                      <div class="section-content type-pdl">
+                        <figure class="picture-card type-w100 type-lg">
+                          <img src="assets/images/img/img-facilities-ecology-f2-07.png" alt="썸네일" class="thumbnail-img">
+                          <p class="overlay-txt">버섯이야기 전시관 내부</p>
+                          <figcaption class="card-caption">
+                            <span class="txt">버섯이야기 전시관 내부</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">식용버섯과 독버섯, 희귀버섯을 전시하여 구분법을 알려주고 바닥에는 문경일원에서 서식하고 있는 버섯의 생육환경을 눈으로 확인할 수 있게
+                          디오라마형태로 연출해 놓았다.</p>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">4zone-자연과 인간</span>
+                      </h5>
+                      <div class="section-content type-pdl">
+                        <figure class="picture-card type-w100 type-lg">
+                          <img src="assets/images/img/img-facilities-ecology-f2-08.png" alt="썸네일" class="thumbnail-img">
+                          <p class="overlay-txt">자연과 인간 전시관 내부</p>
+                          <figcaption class="card-caption">
+                            <span class="txt">자연과 인간 전시관 내부</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">문경새재의 아름다운 경치와 다양한 생물자원을 간직하고 있는 것은 문경시민들이 높은 자연생태의식을 보전하고자 하는 노력에 있다고 할 수 있다.
+                          이런 자연생태의식을 고취하고
+                          학습할 수 있도록 멸종위기의 생물자원들과 환경파괴 영상, 동물들이 인류에서 하고 싶은 이야기등을 전시하고 있다.</p>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">생태게임룸</span>
+                      </h5>
+                      <div class="section-content type-pdl">
+                        <figure class="picture-card type-w100 type-lg">
+                          <img src="assets/images/img/img-facilities-ecology-f2-09.png" alt="썸네일" class="thumbnail-img">
+                          <p class="overlay-txt">생태게임룸 전시관 내부</p>
+                          <figcaption class="card-caption">
+                            <span class="txt">생태게임룸 전시관 내부</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">자연생태전시관을 방문하고 기념할 수 있는 사진 한 장, 퍼즐을 맞추면서 멸종하고 있는 생물자원 학습, 키오스크 게임을 통한 우리의 생물자원 학습
+                          등의 여러가지 자연생태와
+                          연관된 생태게임을 통한 재학습 및 흥미를 느낄 수 있는 공간이다.</p>
+                      </div>
+                    </section>
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">다목적 생태체험교육실</span>
+                      </h5>
+                      <div class="section-content type-pdl">
+                        <figure class="picture-card type-w100 type-lg">
+                          <img src="assets/images/img/img-facilities-ecology-f2-10.png" alt="썸네일" class="thumbnail-img">
+                          <p class="overlay-txt">다목적생태체험교육실 내부</p>
+                          <figcaption class="card-caption">
+                            <span class="txt">다목적생태체험교육실 내부</span>
+                          </figcaption>
+                        </figure>
+                        <p class="desc-txt">다양한 향토 생태자원을 활용 문경의 생태문화와 체험중심의 생태강좌를 전개하며, 지역 환경자원과 연계한 생태교육을 통해 친환경 생활태도를 기를 수
+                          있다.</p>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+
+                <!-- END 2층 내용 -->
+
+                <!-- 야외전시물 내용 -->
+                <div id="tab-outdoor" class="tab-content">
+                  <div class="facil-outdoor-content">
+                    <section class="section">
+                      <h5 class="section-title">
+                        <i class="ico ico-subpage-title01"></i>
+                        <span class="txt">야생화단지</span>
+                      </h5>
+                      <div class="section-content type-pdl">
+                        <p class="desc-txt">자연생태박물관 주변에는 2007년 7월초 준공된 야생화단지에는 23,000m²의 부지에 야외조각공원, 전통정자, 실개천, 연못, 암석원, 죽림원
+                          등과 함께 최근에는 새로이 산책로 및 정자 등을 추가 설치하였으며, 단지에는 계절별로 다양한 식물이 173종 10만본이 식재되어 있어 관광객들의 휴식처로 각광을 받고
                           있습니다.</p>
+                        <div class="grid-list-grp">
+                          <div class="list">
+                            <figure class="basic-card">
+                              <img src="assets/images/img/img-facil-flower01.png" alt="야생화단지 이미지 01" class="thumbnail-img">
+                            </figure>
+                          </div>
+                          <div class="list">
+                            <figure class="basic-card">
+                              <img src="assets/images/img/img-facil-flower02.png" alt="야생화단지 이미지 02" class="thumbnail-img">
+                            </figure>
+                          </div>
+                          <div class="list">
+                            <figure class="basic-card">
+                              <img src="assets/images/img/img-facil-flower03.png" alt="야생화단지 이미지 03" class="thumbnail-img">
+                            </figure>
+                          </div>
+                          <div class="list">
+                            <figure class="basic-card">
+                              <img src="assets/images/img/img-facil-flower04.png" alt="야생화단지 이미지 04" class="thumbnail-img">
+                            </figure>
+                          </div>
+                          <div class="list">
+                            <figure class="basic-card">
+                              <img src="assets/images/img/img-facil-flower05.png" alt="야생화단지 이미지 05" class="thumbnail-img">
+                            </figure>
+                          </div>
+                          <div class="list">
+                            <figure class="basic-card">
+                              <img src="assets/images/img/img-facil-flower06.png" alt="야생화단지 이미지 06" class="thumbnail-img">
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="facil-outdoor-card basic-card">
+                          <img src="assets/images/img/img-facil-outdoor01.png" alt="풍력발전시스템 이미지" class="thumbnail-img">
+                          <div class="card-content">
+                            <h5 class="card-ttl">풍력발전시스템</h5>
+                            <p class="card-desc">풍력발전 시스템 5KW 2기는 기존 한국전력계통과의 연계가 가능하도록 설치하였고 실제 발전되는 모습을 모니터링을 통해 보여주어 관람객들이
+                              풍력발전기의 원리를 이해하고 발전현장을 직접 체험할 수 있습니다.</p>
+                          </div>
+                        </div>
+                        <div class="facil-outdoor-card basic-card">
+                          <img src="assets/images/img/img-facil-outdoor02.png" alt="야외상징조형물 이미지" class="thumbnail-img">
+                          <div class="card-content">
+                            <h5 class="card-ttl">야외상징조형물(시계탑)</h5>
+                            <p class="card-desc">야외조형물인 시계탑에는 2.4KW의 태양광발전으로 발전된 전기를 자체적으로 배터리에 충전하여 시계를 작동하며 야간에 조명으로 사용할 수
+                              있도록 설치하였습니다.</p>
+                          </div>
+                        </div>
+                        <div class="facil-outdoor-card basic-card">
+                          <img src="assets/images/img/img-facil-outdoor03.png" alt="태양광가로등 이미지" class="thumbnail-img">
+                          <div class="card-content">
+                            <h5 class="card-ttl">태양광가로등</h5>
+                            <p class="card-desc">태양광가로등은 255W 10기를 설치하였고 태양광발전으로 발전된 전기를 자체적으로 배터리에 충전하여 야간에 점등시 에너지원으로 사용하는
+                              자립형 가로등 시스템으로, 20년 이상의 수명을 가지고 있는 무전극램프를 사용하였습니다.</p>
+                          </div>
+                        </div>
                       </div>
-                      <div class="section-content type-pdl type-flex">
-                        <figure class="picture-card">
-                          <img src="assets/images/img/img-facilities-ecology-f1-05.png" alt="썸네일" class="thumbnail-img">
-                          <figcaption class="card-caption">
-                            <span class="txt">자연생태공원 축소모형</span> <br>
-                            <span class="txt sm-txt">(ecological park minirture)</span>
-                          </figcaption>
-                        </figure>
-                        <p class="desc-txt">문경새재 자연생태공원에 대한 전반적인 안내와 정보관, 영상관 등의 일정과 시간대별 프로그램에 대한 각종 정보와
-                          안내 팜플렛을 제공합니다.</p>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">특별전시실</span>
-                    </h5>
-                    <div class="section-content type-pdl type-flex">
-                      <figure class="picture-card">
-                        <img src="assets/images/img/img-facilities-ecology-f1-06.png" alt="썸네일" class="thumbnail-img">
-                        <figcaption class="card-caption">
-                          <span class="txt">특별전시실</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">문경의 생태관련 개인 소장품을 대여하여 특별전시공간으로 활용하여 문경의 생태관련 전시문화를 활성하기 위하여 마련한 공간입니다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">가상4D체험</span>
-                    </h5>
-                    <div class="section-content type-pdl type-flex">
-                      <figure class="picture-card">
-                        <img src="assets/images/img/img-facilities-ecology-f1-07.png" alt="썸네일" class="thumbnail-img">
-                        <figcaption class="card-caption">
-                          <span class="txt">가상4D체험</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">자연생태박물관 4D라이더 장비를 활용하여 가상의 생태여행 및 생태체험을 할 수 있습니다. 고화질의 생태영상과
-                        사운 드를 제공하는 가상4D생태체험의 공간으로 체험할 수 있습니다. <br><br>
-                        이용료: 1회 이용시 1,000원 <br><br>
-                        1회 생태체험 인원은 6명입니다.</p>
-                    </div>
-                  </section>
+                    </section>
+                  </div>
                 </div>
+
+                <!-- END 야외전시물 내용 -->
               </div>
-
-              <!-- END 1층 내용 -->
-
-              <!-- 2층 내용 -->
-              <div id="tab-2f" class="tab-content">
-                <div class="facil-floor-content">
-                  <section class="section map-section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">자연생태박물관 2층 지도</span>
-                    </h5>
-                    <div class="section-content">
-                      <img src="assets/images/img/img-facil-2f-map.png" alt="2층 지도 이미지" class="map-img">
-                      <div class="gray-bd-box facil-num-box">
-                        <div class="facil-num-item">
-                          <span class="num">1</span>
-                          <p class="txt">생명의탄생(1zone)</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">2</span>
-                          <p class="txt">문경의자연환경(2zone)</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">3</span>
-                          <p class="txt">나무이야기(3zone)</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">4</span>
-                          <p class="txt">새이야기(3zone)</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">5</span>
-                          <p class="txt">물고기이야기(3zone)</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">6</span>
-                          <p class="txt">곤충이야기(3zone)</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">7</span>
-                          <p class="txt">버섯이야기(3zone)</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">8</span>
-                          <p class="txt">자연과인간(4zone)</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">9</span>
-                          <p class="txt">생태게임룸</p>
-                        </div>
-                        <div class="facil-num-item">
-                          <span class="num">10</span>
-                          <p class="txt">다목적 생태체험교육실</p>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">1zone-생명의 탄생</span>
-                    </h5>
-                    <div class="section-content type-pdl">
-                      <figure class="picture-card type-w100 type-lg">
-                        <img src="assets/images/img/img-facilities-ecology-f2-01.png" alt="썸네일" class="thumbnail-img">
-                        <p class="overlay-txt">생명의 탄생 전시관 내부</p>
-                        <figcaption class="card-caption">
-                          <span class="txt">생명의 탄생 전시관 내부</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">2층 상설전시관 입구의 문경의 밤하늘은 인류의 과학발전 및 꿈을 상징하고 있다. 생명의 탄생코너에서는 태초에 지구의 생성이후 생명체가 어떻게
-                        만들어졌는가와 생물이 어떻게
-                        진화되어 인류가 만들어졌는가를 디오라마형식으로 연출하여 보여준다. 그리고 이런 자연사의 연구자료가 되는 화석 및 광물, 암석을 이해하고 배울 수 있다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">zone-문경의 자연환경</span>
-                    </h5>
-                    <div class="section-content type-pdl">
-                      <figure class="picture-card type-w100 type-lg">
-                        <img src="assets/images/img/img-facilities-ecology-f2-02.png" alt="썸네일" class="thumbnail-img">
-                        <p class="overlay-txt">문경의 자연환경 전시관 내부</p>
-                        <figcaption class="card-caption">
-                          <span class="txt">문경의 자연환경 전시관 내부</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">문경새재를 중심으로 문경에는많은 생물자원들이 분포하고 있으며, 특히 문경새재는 아직도 자연환경이 잘 보전되어 있는 곳 중에 하나이다. 이런
-                        문경의 숲을 가상으로걸으로
-                        문경의 자연환경 및 생물자원의 분포를 볼 수 있다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">3zone-나무이야기</span>
-                    </h5>
-                    <div class="section-content type-pdl">
-                      <figure class="picture-card type-w100 type-lg">
-                        <img src="assets/images/img/img-facilities-ecology-f2-03.png" alt="썸네일" class="thumbnail-img">
-                        <p class="overlay-txt">나무이야기 전시관 내부</p>
-                        <figcaption class="card-caption">
-                          <span class="txt">나무이야기 전시관 내부</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">문경일원에서 관찰되는 식물을 식용, 약용, 독성식물로 기능별로 분류하여 전시하고 있으며, 멸종위기식물, 특산식물, 문경새재의 기대종인
-                        물박달나무
-                        및 선조들의 물박달나무를
-                        이용한 생활기구를 볼 수 있다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">3zone-새이야기</span>
-                    </h5>
-                    <div class="section-content type-pdl">
-                      <figure class="picture-card type-w100 type-lg">
-                        <img src="assets/images/img/img-facilities-ecology-f2-04.png" alt="썸네일" class="thumbnail-img">
-                        <p class="overlay-txt">새이야기 전시관 내부</p>
-                        <figcaption class="card-caption">
-                          <span class="txt">새이야기 전시관 내부</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">문경일원에서 관찰되는 새들을 들녘과 산지로 구분하여 디오라마로 연출하여 전시하고 있으며, 천연기념물 및 키오스크를 통한 새들의 특성을 학습할
-                        수
-                        있다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">3zone-물고기이야기</span>
-                    </h5>
-                    <div class="section-content type-pdl">
-                      <figure class="picture-card type-w100 type-lg">
-                        <img src="assets/images/img/img-facilities-ecology-f2-05.png" alt="썸네일" class="thumbnail-img">
-                        <p class="overlay-txt">물고기이야기 전시관 내부</p>
-                        <figcaption class="card-caption">
-                          <span class="txt">물고기이야기 전시관 내부</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">문경새재의 계곡에서 채집한 살아있는 물고기가 대형수조에서 헤엄치고 주변으로는 야생동물 및 식물을 디오라마형태로 연출하여 놓았다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">3zone-곤충이야기</span>
-                    </h5>
-                    <div class="section-content type-pdl">
-                      <figure class="picture-card type-w100 type-lg">
-                        <img src="assets/images/img/img-facilities-ecology-f2-06.png" alt="썸네일" class="thumbnail-img">
-                        <p class="overlay-txt">곤충이야기 전시관 내부</p>
-                        <figcaption class="card-caption">
-                          <span class="txt">곤충이야기 전시관 내부</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">중앙의 대형기둥에는 나비의 아름다운 자태를 디자인하여 대형연출물로 표현해 놓았고, 새재일원에서 다양하게 관찰되는 매미목, 잠자리목,
-                        메뚜기목,
-                        노린재목, 딱정벌레목으로
-                        분류하여 표본을 전시하여 각 목별 특징을 표본을 통하여 확인할 수 있다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">3zone-버섯이야기</span>
-                    </h5>
-                    <div class="section-content type-pdl">
-                      <figure class="picture-card type-w100 type-lg">
-                        <img src="assets/images/img/img-facilities-ecology-f2-07.png" alt="썸네일" class="thumbnail-img">
-                        <p class="overlay-txt">버섯이야기 전시관 내부</p>
-                        <figcaption class="card-caption">
-                          <span class="txt">버섯이야기 전시관 내부</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">식용버섯과 독버섯, 희귀버섯을 전시하여 구분법을 알려주고 바닥에는 문경일원에서 서식하고 있는 버섯의 생육환경을 눈으로 확인할 수 있게
-                        디오라마형태로 연출해 놓았다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">4zone-자연과 인간</span>
-                    </h5>
-                    <div class="section-content type-pdl">
-                      <figure class="picture-card type-w100 type-lg">
-                        <img src="assets/images/img/img-facilities-ecology-f2-08.png" alt="썸네일" class="thumbnail-img">
-                        <p class="overlay-txt">자연과 인간 전시관 내부</p>
-                        <figcaption class="card-caption">
-                          <span class="txt">자연과 인간 전시관 내부</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">문경새재의 아름다운 경치와 다양한 생물자원을 간직하고 있는 것은 문경시민들이 높은 자연생태의식을 보전하고자 하는 노력에 있다고 할 수 있다.
-                        이런 자연생태의식을 고취하고
-                        학습할 수 있도록 멸종위기의 생물자원들과 환경파괴 영상, 동물들이 인류에서 하고 싶은 이야기등을 전시하고 있다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">생태게임룸</span>
-                    </h5>
-                    <div class="section-content type-pdl">
-                      <figure class="picture-card type-w100 type-lg">
-                        <img src="assets/images/img/img-facilities-ecology-f2-09.png" alt="썸네일" class="thumbnail-img">
-                        <p class="overlay-txt">생태게임룸 전시관 내부</p>
-                        <figcaption class="card-caption">
-                          <span class="txt">생태게임룸 전시관 내부</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">자연생태전시관을 방문하고 기념할 수 있는 사진 한 장, 퍼즐을 맞추면서 멸종하고 있는 생물자원 학습, 키오스크 게임을 통한 우리의 생물자원
-                        학습
-                        등의 여러가지 자연생태와
-                        연관된 생태게임을 통한 재학습 및 흥미를 느낄 수 있는 공간이다.</p>
-                    </div>
-                  </section>
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">다목적 생태체험교육실</span>
-                    </h5>
-                    <div class="section-content type-pdl">
-                      <figure class="picture-card type-w100 type-lg">
-                        <img src="assets/images/img/img-facilities-ecology-f2-10.png" alt="썸네일" class="thumbnail-img">
-                        <p class="overlay-txt">다목적생태체험교육실 내부</p>
-                        <figcaption class="card-caption">
-                          <span class="txt">다목적생태체험교육실 내부</span>
-                        </figcaption>
-                      </figure>
-                      <p class="desc-txt">다양한 향토 생태자원을 활용 문경의 생태문화와 체험중심의 생태강좌를 전개하며, 지역 환경자원과 연계한 생태교육을 통해 친환경 생활태도를 기를
-                        수
-                        있다.</p>
-                    </div>
-                  </section>
-                </div>
-              </div>
-
-              <!-- END 2층 내용 -->
-
-              <!-- 야외전시물 내용 -->
-              <div id="tab-outdoor" class="tab-content">
-                <div class="facil-outdoor-content">
-                  <section class="section">
-                    <h5 class="section-title">
-                      <i class="ico ico-subpage-title01"></i>
-                      <span class="txt">야생화단지</span>
-                    </h5>
-                    <div class="section-content type-pdl">
-                      <p class="desc-txt">자연생태박물관 주변에는 2007년 7월초 준공된 야생화단지에는 23,000m²의 부지에 야외조각공원, 전통정자, 실개천, 연못, 암석원,
-                        죽림원
-                        등과 함께 최근에는 새로이 산책로 및 정자 등을 추가 설치하였으며, 단지에는 계절별로 다양한 식물이 173종 10만본이 식재되어 있어 관광객들의 휴식처로 각광을 받고
-                        있습니다.</p>
-                      <div class="grid-list-grp">
-                        <div class="list">
-                          <figure class="basic-card">
-                            <img src="assets/images/img/img-facil-flower01.png" alt="야생화단지 이미지 01"
-                              class="thumbnail-img">
-                          </figure>
-                        </div>
-                        <div class="list">
-                          <figure class="basic-card">
-                            <img src="assets/images/img/img-facil-flower02.png" alt="야생화단지 이미지 02"
-                              class="thumbnail-img">
-                          </figure>
-                        </div>
-                        <div class="list">
-                          <figure class="basic-card">
-                            <img src="assets/images/img/img-facil-flower03.png" alt="야생화단지 이미지 03"
-                              class="thumbnail-img">
-                          </figure>
-                        </div>
-                        <div class="list">
-                          <figure class="basic-card">
-                            <img src="assets/images/img/img-facil-flower04.png" alt="야생화단지 이미지 04"
-                              class="thumbnail-img">
-                          </figure>
-                        </div>
-                        <div class="list">
-                          <figure class="basic-card">
-                            <img src="assets/images/img/img-facil-flower05.png" alt="야생화단지 이미지 05"
-                              class="thumbnail-img">
-                          </figure>
-                        </div>
-                        <div class="list">
-                          <figure class="basic-card">
-                            <img src="assets/images/img/img-facil-flower06.png" alt="야생화단지 이미지 06"
-                              class="thumbnail-img">
-                          </figure>
-                        </div>
-                      </div>
-                      <div class="facil-outdoor-card basic-card">
-                        <img src="assets/images/img/img-facil-outdoor01.png" alt="풍력발전시스템 이미지" class="thumbnail-img">
-                        <div class="card-content">
-                          <h5 class="card-ttl">풍력발전시스템</h5>
-                          <p class="card-desc">풍력발전 시스템 5KW 2기는 기존 한국전력계통과의 연계가 가능하도록 설치하였고 실제 발전되는 모습을 모니터링을 통해 보여주어
-                            관람객들이
-                            풍력발전기의 원리를 이해하고 발전현장을 직접 체험할 수 있습니다.</p>
-                        </div>
-                      </div>
-                      <div class="facil-outdoor-card basic-card">
-                        <img src="assets/images/img/img-facil-outdoor02.png" alt="야외상징조형물 이미지" class="thumbnail-img">
-                        <div class="card-content">
-                          <h5 class="card-ttl">야외상징조형물(시계탑)</h5>
-                          <p class="card-desc">야외조형물인 시계탑에는 2.4KW의 태양광발전으로 발전된 전기를 자체적으로 배터리에 충전하여 시계를 작동하며 야간에 조명으로 사용할
-                            수
-                            있도록 설치하였습니다.</p>
-                        </div>
-                      </div>
-                      <div class="facil-outdoor-card basic-card">
-                        <img src="assets/images/img/img-facil-outdoor03.png" alt="태양광가로등 이미지" class="thumbnail-img">
-                        <div class="card-content">
-                          <h5 class="card-ttl">태양광가로등</h5>
-                          <p class="card-desc">태양광가로등은 255W 10기를 설치하였고 태양광발전으로 발전된 전기를 자체적으로 배터리에 충전하여 야간에 점등시 에너지원으로
-                            사용하는
-                            자립형 가로등 시스템으로, 20년 이상의 수명을 가지고 있는 무전극램프를 사용하였습니다.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </div>
-
-              <!-- END 야외전시물 내용 -->
             </div>
           </div>
-        </div>
 
-        <!-- END 오른쪽 내용영역 -->
+          <!-- END 오른쪽 내용영역 -->
+        </div>
       </div>
+
+      <!-- END 시설/전시 소개 : 생태관람 안내 페이지 -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <h6 class="logo">
+            <a href="index.html">
+              <img src="assets/images/logo/logo-footer.png" alt="로고" class="logo-img">
+            </a>
+          </h6>
+          <div class="footer-info-grp">
+            <p class="txt">경북 문경시 문경읍 새재1길 45(하초리 243) / 대표전화 : 054-550-8383, 팩스 : 054-550-6179 <br>
+              COPYRIGHT © 2024 MUNGYEONG Natural Ecology Museum. ALL RIGHTS RESERVED. 홈페이지담당자이메일 GBMGMASTER@KOREA.KR <br>
+              본 홈페이지에 게시된 이메일주소가 자동 수집을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <!-- END 시설/전시 소개 : 생태관람 안내 페이지 -->
-    <footer class="footer">
-      <div class="footer-inner">
-        <h6 class="logo">
-          <a href="index.html">
-            <img src="assets/images/logo/logo-footer.png" alt="로고" class="logo-img">
-          </a>
-        </h6>
-        <div class="footer-info-grp">
-          <p class="txt">경북 문경시 문경읍 새재1길 45(하초리 243) / 대표전화 : 054-550-8383, 팩스 : 054-550-6179 <br>
-            COPYRIGHT © 2024 MUNGYEONG Natural Ecology Museum. ALL RIGHTS RESERVED. 홈페이지담당자이메일 GBMGMASTER@KOREA.KR <br>
-            본 홈페이지에 게시된 이메일주소가 자동 수집을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="assets/js/ui.js"></script>
-</body>
-
+    <script src="assets/js/ui.js"></script>
+    <script>
+      // 헤더 버튼
+      $('#header-nav-btn').on('click', function() {
+        $('.header-nav-page').addClass('active');
+      })
+      $('#header-nav-close-btn').on('click', function() {
+        $('.header-nav-page').removeClass('active');
+      })
+    </script>
+  </body>
 </html>

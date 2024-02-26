@@ -1,225 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문경자연생태박물관</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>문경자연생태박물관</title>
-
-  <!-- Open Graph -->
-  <meta name="title" content="문경자연생태박물관">
-  <meta name="author" content="문경자연생태박물관">
-  <meta name="description" content="문경자연생태박물관 홈페이지입니다.">
-  <meta name="keywords" content="문경자연생태박물관, 문경, 문경생태박물관">
-  <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
-  <link rel="stylesheet" href="assets/css/vendor/reset.css">
-  <link rel="stylesheet" href="assets/css/ui.css">
-  <link rel="stylesheet" href="assets/css/pages.css">
-  <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
-</head>
-
-<body ontouchstart>
-  <div id="app">
-    <header class="header">
-      <div class="header-inner">
-        <h1 class="logo">
-          <a href="index.html">
-            <img src="assets/images/logo/logo-symbol.png" alt="문경자연새재박물관" class="logo-img">
-          </a>
-        </h1>
-        <div class="header-nav-grp">
-          <div class="header-nav">
-            <a href="index.html" class="link ">Home</a>
-          </div>
-          <div class="header-nav">
-            <a href="introduce-greeting.html" class="link ">박물관 소개</a>
-          </div>
-          <div class="header-nav">
-            <a href="facilities-ecology-guide.html" class="link ">시설/전시</a>
-          </div>
-          <div class="header-nav">
-            <a href="news-new-list.html" class="link ">소식 나눔</a>
-          </div>
-          <div class="header-nav">
-            <a href="archive-3d-list.html" class="link ">아카이브</a>
-          </div>
-        </div>
-        <div class="header-sns-grp">
-          <a href="#" target="_blank" class="header-sns-link">
-            <span class="txt-hidden">유튜브</span>
-            <img src="assets/images/icon/ico-sns-youtube.png" alt="유튜브 아이콘" class="ico">
-          </a>
-          <a href="#" target="_blank" class="header-sns-link">
-            <span class="txt-hidden">페이스북</span>
-            <img src="assets/images/icon/ico-sns-facebook.png" alt="페이스북 아이콘" class="ico">
-          </a>
-          <a href="#" target="_blank" class="header-sns-link">
-            <span class="txt-hidden">인스타그램</span>
-            <img src="assets/images/icon/ico-sns-instagram.png" alt="인스타그램 아이콘" class="ico">
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <!-- 관리자 : 새소식 페이지 -->
-    <div class="admin-upload-page page-container">
-      <div class="subpage-top-header">
-        <img src="assets/images/img/img-subpage05-top-header.png" alt="서브페이지 헤더 이미지" class="bg">
-        <h2 class="title">
-          <img src="assets/images/text/text-subpage01-top-header.png" alt="초록의 생명이 호흡하는 문경자연생태박물관">
-        </h2>
-      </div>
-      <div class="subpage-layout">
-
-        <!-- 왼쪽 사이드바 -->
-        <div class="subpage-layout-left">
-          <div class="sidebar">
-            <h3 class="sidebar-title">아카이브</h3>
-            <ul class="sidebar-nav-grp">
-              <li class="sidebar-nav">
-                <a href="admin-archive-create.html" class="link ">아카이브</a>
-              </li>
-              <li class="sidebar-nav">
-                <a href="admin-news-create.html" class="link active">새소식</a>
-              </li>
-              <li class="sidebar-nav">
-                <a href="admin-gallery-create.html" class="link ">갤러리</a>
-              </li>
-              <li class="sidebar-nav">
-                <a href="admin-faq-create.html" class="link ">FAQ</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- END 왼쪽 사이드바 -->
-
-        <!-- 오른쪽 내용영역 -->
-        <div class="subpage-layout-right">
-          <div class="subpage-title-wrap">
-            <h4 class="subpage-title">새소식 업로드</h4>
-          </div>
-          <div class="subpage-content">
-            <div id="admin-news-create-tabs" class="tabs">
-              <button type="button" data-tab="tab-notice" class="tab type-sm active">공지</button>
-              <button type="button" data-tab="tab-default" class="tab type-sm">일반</button>
+    <!-- Open Graph -->
+    <meta name="title" content="문경자연생태박물관">
+    <meta name="author" content="문경자연생태박물관">
+    <meta name="description" content="문경자연생태박물관 홈페이지입니다.">
+    <meta name="keywords" content="문경자연생태박물관, 문경, 문경생태박물관">
+    <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/vendor/reset.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
+  </head>
+  <body ontouchstart>
+    <div id="app">
+      <header class="header">
+        <div class="header-inner">
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="assets/images/logo/logo-symbol.png" alt="문경자연새재박물관" class="logo-img">
+            </a>
+          </h1>
+          <div class="header-nav-grp">
+            <div class="header-nav">
+              <a href="index.html" class="link ">Home</a>
             </div>
-            <div id="admin-news-create-tabs-container" class="tab-content-container">
+            <div class="header-nav">
+              <a href="introduce-greeting.html" class="link ">박물관 소개</a>
+            </div>
+            <div class="header-nav">
+              <a href="facilities-ecology-guide.html" class="link ">시설/전시</a>
+            </div>
+            <div class="header-nav">
+              <a href="news-new-list.html" class="link ">소식 나눔</a>
+            </div>
+            <div class="header-nav">
+              <a href="archive-3d-list.html" class="link ">아카이브</a>
+            </div>
+          </div>
+          <div class="header-sns-grp">
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">유튜브</span>
+              <img src="assets/images/icon/ico-sns-youtube.png" alt="유튜브 아이콘" class="ico">
+            </a>
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">페이스북</span>
+              <img src="assets/images/icon/ico-sns-facebook.png" alt="페이스북 아이콘" class="ico">
+            </a>
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">인스타그램</span>
+              <img src="assets/images/icon/ico-sns-instagram.png" alt="인스타그램 아이콘" class="ico">
+            </a>
+          </div>
+          <button id="header-nav-btn" type="button" class="btn header-nav-btn">
+            <span class="txt-hidden"></span>
+            <img src="assets/images/icon/ico-header-nav.svg" alt="헤더 오픈 아이콘" class="ico">
+          </button>
+        </div>
+      </header>
+      <div class="header-nav-page">
+        <button type="button" id="header-nav-close-btn" class="btn header-nav-close-btn">
+          <span class="txt-hidden"></span>
+          <img src="assets/images/icon/ico-header-close.svg" alt="헤더 닫기 아이콘" class="ico">
+        </button>
+        <div class="header-nav-page-inner">
+          <div class="header-nav-grp">
+            <div class="header-nav">
+              <a href="index.html" class="link ">Home</a>
+            </div>
+            <div class="header-nav">
+              <a href="introduce-greeting.html" class="link ">박물관 소개</a>
+            </div>
+            <div class="header-nav">
+              <a href="facilities-ecology-guide.html" class="link ">시설/전시</a>
+            </div>
+            <div class="header-nav">
+              <a href="news-new-list.html" class="link ">소식 나눔</a>
+            </div>
+            <div class="header-nav">
+              <a href="archive-3d-list.html" class="link ">아카이브</a>
+            </div>
+          </div>
+          <div class="header-sns-grp">
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">유튜브</span>
+              <img src="assets/images/icon/ico-sns-youtube.png" alt="유튜브 아이콘" class="ico">
+            </a>
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">페이스북</span>
+              <img src="assets/images/icon/ico-sns-facebook.png" alt="페이스북 아이콘" class="ico">
+            </a>
+            <a href="#" target="_blank" class="header-sns-link">
+              <span class="txt-hidden">인스타그램</span>
+              <img src="assets/images/icon/ico-sns-instagram.png" alt="인스타그램 아이콘" class="ico">
+            </a>
+          </div>
+        </div>
+      </div>
 
-              <!-- 공지 내용 -->
-              <div id="tab-notice" class="tab-content active">
-                <div class="form-create-container">
+      <!-- 관리자 : 새소식 페이지 -->
+      <div class="admin-upload-page page-container">
+        <div class="subpage-top-header">
+          <img src="assets/images/img/img-subpage05-top-header.png" alt="서브페이지 헤더 이미지" class="bg">
+          <h2 class="title">
+            <img src="assets/images/text/text-subpage01-top-header.png" alt="초록의 생명이 호흡하는 문경자연생태박물관">
+          </h2>
+        </div>
+        <div class="subpage-layout">
 
-                  <!--  입력 영역 -->
-                  <div class="form-item-grp">
-                    <div class="form-item">
-                      <label class="form-label">제목</label>
-                      <div class="form-inp-wrap">
-                        <input type="text" class="form-inp" placeholder="제목을 입력해주세요.">
+          <!-- 왼쪽 사이드바 -->
+          <div class="subpage-layout-left">
+            <div class="sidebar">
+              <h3 class="sidebar-title">아카이브</h3>
+              <ul class="sidebar-nav-grp">
+                <li class="sidebar-nav">
+                  <a href="admin-archive-create.html" class="link ">아카이브</a>
+                </li>
+                <li class="sidebar-nav">
+                  <a href="admin-news-create.html" class="link active">새소식</a>
+                </li>
+                <li class="sidebar-nav">
+                  <a href="admin-gallery-create.html" class="link ">갤러리</a>
+                </li>
+                <li class="sidebar-nav">
+                  <a href="admin-faq-create.html" class="link ">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- END 왼쪽 사이드바 -->
+
+          <!-- 오른쪽 내용영역 -->
+          <div class="subpage-layout-right">
+            <div class="subpage-title-wrap">
+              <h4 class="subpage-title">새소식 업로드</h4>
+            </div>
+            <div class="subpage-content">
+              <div id="admin-news-create-tabs" class="tabs">
+                <button type="button" data-tab="tab-notice" class="tab type-sm active">공지</button>
+                <button type="button" data-tab="tab-default" class="tab type-sm">일반</button>
+              </div>
+              <div id="admin-news-create-tabs-container" class="tab-content-container">
+
+                <!-- 공지 내용 -->
+                <div id="tab-notice" class="tab-content active">
+                  <div class="form-create-container">
+
+                    <!--  입력 영역 -->
+                    <div class="form-item-grp">
+                      <div class="form-item">
+                        <label class="form-label">제목</label>
+                        <div class="form-inp-wrap">
+                          <input type="text" class="form-inp" placeholder="제목을 입력해주세요.">
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-item">
-                      <label class="form-label">첨부파일</label>
-                      <div class="form-inp-wrap">
-                        <div class="file-inp-wrap">
-                          <input id="file-notice" data-upload-file type="file" class="none">
-                          <label for="file-notice" class="file-btn">파일 선택</label>
-                          <span data-upload-file-name class="txt"></span>
+                      <div class="form-item">
+                        <label class="form-label">첨부파일</label>
+                        <div class="form-inp-wrap">
+                          <div class="file-inp-wrap">
+                            <input id="file-notice" data-upload-file type="file" class="none">
+                            <label for="file-notice" class="file-btn">파일 선택</label>
+                            <span data-upload-file-name class="txt"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-item">
+                        <label class="form-label">내용</label>
+                        <div class="form-inp-wrap">
+                          <textarea placeholder="내용이 있으면 입력하세요." class="form-inp"></textarea>
                         </div>
                       </div>
                     </div>
-                    <div class="form-item">
-                      <label class="form-label">내용</label>
-                      <div class="form-inp-wrap">
-                        <textarea placeholder="내용이 있으면 입력하세요." class="form-inp"></textarea>
-                      </div>
+
+                    <!--  END 입력 영역 -->
+
+                    <!-- 버튼 영역 -->
+                    <div class="btn-wrap">
+                      <button type="button" class="btn theme-solid-btn">저장</button>
+                      <button type="button" class="btn gray-bd-btn">취소</button>
                     </div>
+
+                    <!-- END 버튼 영역 -->
                   </div>
-
-                  <!--  END 입력 영역 -->
-
-                  <!-- 버튼 영역 -->
-                  <div class="btn-wrap">
-                    <button type="button" class="btn theme-solid-btn">저장</button>
-                    <button type="button" class="btn gray-bd-btn">취소</button>
-                  </div>
-
-                  <!-- END 버튼 영역 -->
                 </div>
-              </div>
 
-              <!-- END 공지 내용 -->
+                <!-- END 공지 내용 -->
 
-              <!-- 일반 내용 -->
-              <div id="tab-default" class="tab-content">
-                <div class="form-create-container">
+                <!-- 일반 내용 -->
+                <div id="tab-default" class="tab-content">
+                  <div class="form-create-container">
 
-                  <!--  입력 영역 -->
-                  <div class="form-item-grp">
-                    <div class="form-item">
-                      <label class="form-label">제목</label>
-                      <div class="form-inp-wrap">
-                        <input type="text" class="form-inp" placeholder="제목을 입력해주세요.">
+                    <!--  입력 영역 -->
+                    <div class="form-item-grp">
+                      <div class="form-item">
+                        <label class="form-label">제목</label>
+                        <div class="form-inp-wrap">
+                          <input type="text" class="form-inp" placeholder="제목을 입력해주세요.">
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-item">
-                      <label class="form-label">첨부파일</label>
-                      <div class="form-inp-wrap">
-                        <div class="file-inp-wrap">
-                          <input id="file-default" data-upload-file type="file" class="none">
-                          <label for="file-default" class="file-btn">파일 선택</label>
-                          <span data-upload-file-name class="txt"></span>
+                      <div class="form-item">
+                        <label class="form-label">첨부파일</label>
+                        <div class="form-inp-wrap">
+                          <div class="file-inp-wrap">
+                            <input id="file-default" data-upload-file type="file" class="none">
+                            <label for="file-default" class="file-btn">파일 선택</label>
+                            <span data-upload-file-name class="txt"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-item">
+                        <label class="form-label">내용</label>
+                        <div class="form-inp-wrap">
+                          <textarea placeholder="내용이 있으면 입력하세요." class="form-inp"></textarea>
                         </div>
                       </div>
                     </div>
-                    <div class="form-item">
-                      <label class="form-label">내용</label>
-                      <div class="form-inp-wrap">
-                        <textarea placeholder="내용이 있으면 입력하세요." class="form-inp"></textarea>
-                      </div>
+
+                    <!--  END 입력 영역 -->
+
+                    <!-- 버튼 영역 -->
+                    <div class="btn-wrap">
+                      <button type="button" class="btn theme-solid-btn">저장</button>
+                      <button type="button" class="btn gray-bd-btn">취소</button>
                     </div>
+
+                    <!-- END 버튼 영역 -->
                   </div>
-
-                  <!--  END 입력 영역 -->
-
-                  <!-- 버튼 영역 -->
-                  <div class="btn-wrap">
-                    <button type="button" class="btn theme-solid-btn">저장</button>
-                    <button type="button" class="btn gray-bd-btn">취소</button>
-                  </div>
-
-                  <!-- END 버튼 영역 -->
                 </div>
-              </div>
 
-              <!-- END 일반 내용 -->
+                <!-- END 일반 내용 -->
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- END 오른쪽 내용영역 -->
+          <!-- END 오른쪽 내용영역 -->
+        </div>
       </div>
+
+      <!-- END 관리자 : 새소식 페이지 -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <h6 class="logo">
+            <a href="index.html">
+              <img src="assets/images/logo/logo-footer.png" alt="로고" class="logo-img">
+            </a>
+          </h6>
+          <div class="footer-info-grp">
+            <p class="txt">경북 문경시 문경읍 새재1길 45(하초리 243) / 대표전화 : 054-550-8383, 팩스 : 054-550-6179 <br>
+              COPYRIGHT © 2024 MUNGYEONG Natural Ecology Museum. ALL RIGHTS RESERVED. 홈페이지담당자이메일 GBMGMASTER@KOREA.KR <br>
+              본 홈페이지에 게시된 이메일주소가 자동 수집을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <!-- END 관리자 : 새소식 페이지 -->
-    <footer class="footer">
-      <div class="footer-inner">
-        <h6 class="logo">
-          <a href="index.html">
-            <img src="assets/images/logo/logo-footer.png" alt="로고" class="logo-img">
-          </a>
-        </h6>
-        <div class="footer-info-grp">
-          <p class="txt">경북 문경시 문경읍 새재1길 45(하초리 243) / 대표전화 : 054-550-8383, 팩스 : 054-550-6179 <br>
-            COPYRIGHT © 2024 MUNGYEONG Natural Ecology Museum. ALL RIGHTS RESERVED. 홈페이지담당자이메일 GBMGMASTER@KOREA.KR <br>
-            본 홈페이지에 게시된 이메일주소가 자동 수집을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="assets/js/ui.js"></script>
-</body>
-
+    <script src="assets/js/ui.js"></script>
+    <script>
+      // 헤더 버튼
+      $('#header-nav-btn').on('click', function() {
+        $('.header-nav-page').addClass('active');
+      })
+      $('#header-nav-close-btn').on('click', function() {
+        $('.header-nav-page').removeClass('active');
+      })
+    </script>
+  </body>
 </html>
