@@ -86,6 +86,7 @@ img {
 
 .custom-inp,
 .custom-select {
+  background-color: white;
   height: 34px;
   padding: 0 10px;
   border-radius: 0;
@@ -94,6 +95,20 @@ img {
   width: 100%;
   color: #353535;
   outline: none;
+}
+
+.custom-select {
+  /* 아이폰 사파리 보더 없애기 */
+  -webkit-appearance: none;
+  /* 화살표 없애기 for chrome*/
+  -moz-appearance: none;
+  /* 화살표 없애기 for firefox*/
+  appearance: none;
+  /* 화살표 없애기 공통*/
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevron-down' width='24' height='24' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M6 9l6 6l6 -6' /%3E%3C/svg%3E");
+  background-size: 18px;
+  background-position: calc(100% - 5px) 50%;
+  background-repeat: no-repeat;
 }
 
 .custom-inp:focus,
@@ -131,10 +146,25 @@ img {
 }
 
 @media all and (max-width: 768px) {
+  .search-box {
+    padding: 12px;
+  }
   .search-box .search-box-inner {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+  }
+  .search-box .custom-select {
+    width: 100%;
+  }
+  .search-box .custom-inp,
+  .search-box .custom-select {
+    height: 30px;
+    font-size: 12px;
+  }
+  .search-box .btn-sm {
+    height: 30px;
+    font-size: 12px;
   }
 }
 .tabs {
@@ -240,6 +270,10 @@ img {
     font-size: 14px;
     height: 40px;
     min-width: 250px;
+  }
+  .tabs .tab-direct-btn .ico {
+    width: 10px;
+    height: 12px;
   }
 }
 @media all and (max-width: 991px) {
@@ -376,6 +410,11 @@ img {
   font-size: 14px;
 }
 
+@media all and (max-width: 1500px) {
+  .inner-list-grp .list {
+    font-size: 12px;
+  }
+}
 .square-num-list-grp .square-num {
   display: inline-flex;
   align-items: center;
@@ -400,6 +439,14 @@ img {
   margin-bottom: 0;
 }
 
+@media all and (max-width: 1500px) {
+  .square-num-list-grp .list {
+    margin-bottom: 10px;
+  }
+  .square-num-list-grp .list:last-child {
+    margin-bottom: 0;
+  }
+}
 .mungyeong-box {
   margin-bottom: 35px;
 }
@@ -461,7 +508,7 @@ img {
     height: 164px;
   }
   .picture-card .thumbnail-img {
-    height: calc(100% - 32px);
+    height: calc(100% - 29px);
   }
   .picture-card .card-caption {
     padding: 5px;
@@ -472,6 +519,11 @@ img {
   .picture-card .overlay-txt {
     font-size: 20px;
     bottom: 48px;
+  }
+}
+@media all and (max-width: 600px) {
+  .picture-card {
+    width: 100%;
   }
 }
 .picture-card.type-w100 {
