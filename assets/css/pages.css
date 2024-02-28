@@ -568,6 +568,22 @@ textarea.form-inp {
     font-size: 13px;
   }
 }
+@media all and (max-width: 991px) {
+  .facil-outdoor-card .card-ttl {
+    font-size: 17px;
+  }
+  .facil-outdoor-card .card-desc {
+    font-size: 12px;
+  }
+  .facil-outdoor-card .card-content {
+    padding: 18px 20px;
+  }
+}
+@media all and (max-width: 600px) {
+  .facil-outdoor-card {
+    height: 300px;
+  }
+}
 .facil-outdoor-card:last-child {
   margin-bottom: 0;
 }
